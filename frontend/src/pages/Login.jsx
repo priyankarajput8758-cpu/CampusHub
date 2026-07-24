@@ -1,4 +1,4 @@
-import LoginForm from "../components/auth/LoginForm";
+import LoginForm from "../features/auth/LoginForm";
 const features = [
   "📚 Share Notes",
   "💼 Track Placements",

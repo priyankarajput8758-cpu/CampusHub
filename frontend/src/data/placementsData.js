@@ -1,0 +1,38 @@
+export const placements = [
+  {
+    id: 1,
+    company: "Google",
+    role: "Software Engineer Intern",
+    package: "₹50 LPA",
+    deadline: "30 Jul 2026",
+    eligibility: "CGPA 8+",
+    location: "Bangalore",
+  },
+  {
+    id: 2,
+    company: "Microsoft",
+    role: "SDE Intern",
+    package: "₹45 LPA",
+    deadline: "2 Aug 2026",
+    eligibility: "CGPA 7.5+",
+    location: "Hyderabad",
+  },
+  {
+    id: 3,
+    company: "Amazon",
+    role: "SDE I",
+    package: "₹32 LPA",
+    deadline: "5 Aug 2026",
+    eligibility: "No Backlogs",
+    location: "Bangalore",
+  },
+  {
+    id: 4,
+    company: "Adobe",
+    role: "MTS Intern",
+    package: "₹38 LPA",
+    deadline: "8 Aug 2026",
+    eligibility: "CGPA 7+",
+    location: "Noida",
+  },
+];

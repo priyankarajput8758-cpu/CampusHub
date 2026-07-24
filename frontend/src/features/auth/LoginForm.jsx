@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Input from "../ui/Input";
-import Button from "../ui/Button";
+import Input from "../../components/ui/Input";
+import Button from "../../components/ui/Button";
 
 const LoginForm = () => {
   return (
