@@ -1,3 +1,4 @@
+import ProtectedRoute from "./components/ProtectedRoute";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import Login from "./pages/Login";
@@ -19,14 +20,58 @@ function App() {
       <Route path="/register" element={<Register />} />
 
       {/* Dashboard */}
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/notes" element={<Notes />} />
-      <Route path="/placements" element={<Placements />} />
-      <Route path="/events" element={<Events />} />
-      <Route path="/discussion" element={<Discussion />} />
+            <Route
+        path="/dashboard"
+        element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/notes"
+        element={
+          <ProtectedRoute>
+            <Notes />
+          </ProtectedRoute>
+        }
+      />
 
-      {/* Profile */}
-      <Route path="/profile" element={<Profile />} />
+      <Route
+        path="/placements"
+        element={
+          <ProtectedRoute>
+            <Placements />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/events"
+        element={
+          <ProtectedRoute>
+            <Events />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/discussion"
+        element={
+          <ProtectedRoute>
+            <Discussion />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/profile"
+        element={
+          <ProtectedRoute>
+            <Profile />
+          </ProtectedRoute>
+        }
+      />
     </Routes>
   );
 }
